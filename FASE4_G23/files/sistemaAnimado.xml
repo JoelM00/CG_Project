@@ -1,0 +1,305 @@
+<scene>
+  <group>
+    <lights>
+        <light type="POINT"/>
+    </lights>    
+   <!--Sun-->
+    <scale x="4.0" y="4.0" z="4.0"/>
+    <models>
+      <model file="Sphere.3d" texture="sun.jpg" emissR="1.0f" emissG="1.0f" emissB="1.0f"/>
+    </models>
+  </group>
+  <!--Meteorito-->
+  <group>
+    <translate time="8" trace="100">
+	<point x="-70.0" y="-10" z="0"/>      
+	<point x="0.0" y="0" z="-20.0"/>
+	<point x="70.0" y="10" z="0"/>
+	<point x="0" y="0" z="20.0"/>
+    </translate>
+    <scale x="0.7" y="0.7" z="0.7"/>
+    <models>
+      <model file="teapot.3d"  texture="moon.jpg" diffR="1.0f" diffB="0.0f" diffG="0.0f"/>
+    </models>
+  </group>
+  <!--Mercury-->
+  <group>
+    <translate time="10" trace="100" rotate="false">
+	<point x="-30.0" y="0" z="0"/>      
+	<point x="0.0" y="0" z="-30.0"/>
+	<point x="30.0" y="0" z="0"/>
+	<point x="0" y="0" z="30.0"/>
+    </translate>
+    <scale x="0.3" y="0.3" z="0.3"/>
+    <models>
+      <model file="Sphere.3d"  texture="mercury.jpg" />
+    </models>
+  </group>
+  <!--Venus-->
+  <group>
+    <translate time="20" trace="100" rotate="false">
+	<point x="-45.0" y="0" z="0"/>      
+	<point x="0.0" y="0" z="-45.0"/>
+	<point x="45.0" y="0" z="0"/>
+	<point x="0" y="0" z="45.0"/>
+    </translate>
+    <scale x="0.4" y="0.4" z="0.4"/>
+    <models>
+      <model file="Sphere.3d"  texture="venus.jpg"/>
+    </models>
+  </group>
+  <!--Earth-->
+  <group>
+    <translate time="30" trace="100" rotate="false">
+	<point x="-60.0" y="0" z="0"/>      
+	<point x="0.0" y="0" z="-60.0"/>
+	<point x="60.0" y="0" z="0"/>
+	<point x="0" y="0" z="60.0"/>
+    </translate>
+    <scale x="0.5" y="0.5" z="0.5"/>
+    <models>
+      <model file="Sphere.3d" texture="earth.jpg"/>
+    </models>
+    <!--Moon-->
+    <group>
+      <rotate time="5" x="0" y="1" z="0"/>
+      <translate x="0" y="0" z="10"/>
+      <scale x="0.27" y="0.27" z="0.27"/>
+      <models>
+        <model file="Sphere.3d"  texture="moon.jpg"/>
+      </models>
+    </group>
+  </group>
+  <!--Mars-->
+  <group>
+    <translate time="40" trace="100" rotate="false">
+	<point x="-75.0" y="0" z="0"/>      
+	<point x="0.0" y="0" z="-75.0"/>
+	<point x="75.0" y="0" z="0"/>
+	<point x="0" y="0" z="75.0"/>
+    </translate>
+    <scale x="0.4" y="0.4" z="0.4"/>
+    <models>
+      <model file="Sphere.3d"  texture="mars.jpg"/>
+    </models>
+    <!--Deimos-->
+    <group>
+    <rotate time="5" x="0" y="1" z="0"/>
+    <translate x="0" y="0" z="9"/>
+    <scale x="0.19" y="0.19" z="0.19"/>
+    <models>
+      <model file="Sphere.3d" diffR="0.9f" diffG="0.87f" diffB="0.5f" />/>
+    </models>
+    </group>
+    <!--Phobos-->
+    <group>
+    <rotate time="5" x="0" y="1" z="0"/>
+    <translate x="0" y="0" z="-9"/>
+    <scale x="0.2" y="0.2" z="0.2"/>
+    <models>
+      <model file="Sphere.3d" diffR="0.68f" diffG="0.67f" diffB="0.37f"/>
+    </models>
+    </group>
+  </group>
+  <!--Jupiter-->
+  <group>
+    <translate time="60" trace="100" rotate="false">
+	<point x="-105.0" y="0" z="0"/>      
+	<point x="0.0" y="0" z="-105.0"/>
+	<point x="105.0" y="0" z="0"/>
+	<point x="0" y="0" z="105.0"/>
+    </translate>
+    <scale x="2.5" y="2.5" z="2.5"/>
+    <models>
+      <model file="Sphere.3d"  texture="jupiter.jpg" />
+    </models>
+  <!--Galilean Moons-->
+    <group>
+      <scale x="0.4" y="0.4" z="0.4"/>
+      <!--Io-->
+      <group>
+        <rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="-16"/>           
+        <scale x="0.27" y="0.27" z="0.27"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.95f" diffG="0.92f" diffB="0.56f"/>
+        </models>
+      </group>
+      <!--Ganimede-->
+      <group>
+        <rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="20"/>         
+        <scale x="0.45" y="0.45" z="0.45"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.58f" diffG="0.57f" diffB="0.5f"/>
+        </models>
+      </group>
+      <!--Europa-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="14" y="0" z="0"/>         
+        <scale x="0.18" y="0.18" z="0.18"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.4f" diffG="0.38f" diffB="0.2f"/>
+        </models>
+      </group>
+      <!--Callisto-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="-16" y="0" z="0"/>           
+        <scale x="0.31" y="0.31" z="0.31"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.36f" diffG="0.36f" diffB="0.3f"/>
+        </models>
+      </group> 
+    </group> 
+  </group>
+  <!--Saturn-->
+  <group>
+    <translate time="90" trace="100" rotate="false">
+	<point x="-150.0" y="0" z="0"/>      
+	<point x="0.0" y="0" z="-150.0"/>
+	<point x="150.0" y="0" z="0"/>
+	<point x="0" y="0" z="150.0"/>
+    </translate>
+    <scale x="1.8" y="1.8" z="1.8"/>
+    <models>
+      <model file="Sphere.3d"  texture="saturn.jpg"/>
+    </models>
+    <group>
+      <rotate angle ="90" x="0" y ="1" z ="1"/>
+      <scale x="0.5" y="0.14" z="0.44"/>
+      <models>
+        <model file="torus.3d" diffR="1.0f" diffG="1.0f" diffB="1.0f" />
+      </models>
+    </group>
+    <!--Main Saturn Moons-->
+    <group>
+      <scale x="0.5" y="0.5" z="0.5"/>
+      <!--Titan-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="-22"/>          
+        <scale x="0.5" y="0.5" z="0.5"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.55f" diffG="0.79f" diffB="0.6f"/>
+        </models>
+      </group>
+      <!--Enceladus-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="16"/>           
+        <scale x="0.12" y="0.12" z="0.12"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.94f" diffG="0.94f" diffB="0.94f"/>
+        </models>
+      </group>
+      <!--Iapetus-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="18"/>          
+        <scale x="0.2" y="0.2" z="0.2"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.94f" diffG="0.78f" diffB="0.63f"/>
+        </models>
+      </group>
+    </group> 
+  </group>
+  <!--Uranus-->
+  <group>
+    <translate time="100" trace="100" rotate="false">
+	<point x="-185.0" y="0" z="0"/>      
+	<point x="0.0" y="0" z="-185.0"/>
+	<point x="185.0" y="0" z="0"/>
+	<point x="0" y="0" z="185.0"/>
+    </translate>
+    <scale x="0.8" y="0.8" z="0.8"/>
+    <models>
+      <model file="Sphere.3d"  texture="uranus.jpg"/>
+    </models>
+    <!--Major Uranus Moons-->
+    <group>
+      <scale x="0.7" y="0.7" z="0.7"/>
+      <!--Titania-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="15"/>           
+        <scale x="0.44" y="0.44" z="0.44"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.6f" diffG="0.54f" diffB="0.4f"/>
+        </models>
+      </group>
+      <!--Oberon-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="14"/>          
+        <scale x="0.36" y="0.36" z="0.36"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.65f" diffG="0.65f" diffB="0.65f"/>
+        </models>
+      </group>
+      <!--Umbriel-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="14"/>          
+        <scale x="0.28" y="0.28" z="0.28"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.33f" diffG="0.33f" diffB="0.33f"/>
+        </models>
+      </group>
+      <!--Ariel-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="14"/>          
+        <scale x="0.24" y="0.24" z="0.24"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.61f" diffG="0.56f" diffB="0.41f"/>
+        </models>
+      </group>
+      <!--Miranda-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="13"/>          
+        <scale x="0.1" y="0.1" z="0.1"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.72f" diffG="0.72f" diffB="0.72f"/>
+        </models>
+      </group>
+    </group> 
+  </group>
+  <!--Neptune-->
+  <group>
+    <translate time="110" trace="100" rotate="false">
+	<point x="-200.0" y="0" z="0"/>      
+	<point x="0.0" y="0" z="-200.0"/>
+	<point x="200.0" y="0" z="0"/>
+	<point x="0" y="0" z="200.0"/>
+    </translate>
+    <scale x="0.6" y="0.6" z="0.6"/>
+    <models>
+      <model file="Sphere.3d"  texture="neptune.jpg"/>
+    </models>
+    <!--Main Neptune Moons-->
+    <group>
+      <scale x="0.7" y="0.7" z="0.7"/>
+      <!--Triton-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="-16"/>           
+        <scale x="0.25" y="0.25" z="0.25"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.7f" diffG="1.0f" diffB="1.0f"/>
+        </models>
+      </group>
+      <!--Proteus-->
+      <group>
+	<rotate time="5" x="0" y="1" z="0"/>
+        <translate x="0" y="0" z="16"/>          
+        <scale x="0.13" y="0.13" z="0.13"/>
+        <models>
+          <model file="Sphere.3d" diffR="0.8f" diffG="0.8f" diffB="0.8f"/>
+        </models>
+      </group>
+    </group> 
+  </group>
+</scene>
